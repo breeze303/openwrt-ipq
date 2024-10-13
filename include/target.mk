@@ -37,7 +37,7 @@ DEFAULT_PACKAGES.nas:=\
 	mdadm
 # For router targets
 DEFAULT_PACKAGES.router:=\
-	dnsmasq \
+	dnsmasq-full \
 	firewall4 \
 	nftables \
 	kmod-nft-offload \
@@ -45,6 +45,19 @@ DEFAULT_PACKAGES.router:=\
 	odhcpd-ipv6only \
 	ppp \
 	ppp-mod-pppoe
+# For easy usage
+DEFAULT_PACKAGES.tweak:=\
+	autocore \
+	block-mount \
+	default-settings-chn \
+	kmod-nf-nathelper \
+	kmod-nf-nathelper-extra \
+	luci-light \
+	luci-app-cpufreq \
+	luci-app-opkg \
+	luci-compat \
+	luci-lib-base \
+	luci-lib-ipkg
 
 ifneq ($(DUMP),)
   all: dumpinfo
