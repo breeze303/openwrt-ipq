@@ -106,7 +106,7 @@
 			bias-pull-up;
 		};
 	};
-
+	
 	button_pins: button_pins {
 		joylink_button {
 			pins = "gpio72";
@@ -129,7 +129,7 @@
 			bias-pull-down;
 		};
 	};
-
+	
 	tmp1628_pins: tmp1628_pins {
 		dio {
 			pins = "gpio74";
