@@ -37,12 +37,20 @@ platform_do_upgrade() {
 		fw_setenv bootcount 0
 		nand_do_upgrade "$1"
 		;;
+	redmi,ax5-jdcloud|\
 	jdcloud,ax1800-pro|\
     jdcloud,ax6600)
 		kernelname="0:HLOS"
 		rootfsname="rootfs"
 		mmc_do_upgrade "$1"
 		;;
+	cmiot,ax18|\
+	zn,m2|\
+	qihoo,v6|\
+	redmi,ax5|\
+	xiaomi,ax1800|\
+	glinet,gl-axt1800|\
+	glinet,gl-ax1800|\
 	netgear,wax214)
 		nand_do_upgrade "$1"
 		;;
