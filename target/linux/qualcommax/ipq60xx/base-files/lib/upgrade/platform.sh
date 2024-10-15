@@ -39,7 +39,7 @@ platform_do_upgrade() {
 		;;
 	redmi,ax5-jdcloud|\
 	jdcloud,ax1800-pro|\
-    jdcloud,ax6600)
+	jdcloud,ax6600)
 		kernelname="0:HLOS"
 		rootfsname="rootfs"
 		mmc_do_upgrade "$1"

@@ -11,22 +11,15 @@ ipq60xx_setup_interfaces()
 	local board="$1"
 
 	case "$board" in
-	8devices,mango-dvk)
+	8devices,mango-dvk|\
+	glinet,gl-axt1800)
 		ucidef_set_interfaces_lan_wan "lan1 lan2" "wan"
 		;;
 	cambiumnetworks,xe3-4)
 		ucidef_set_interface_lan "lan1 lan2" "dhcp"
 		;;
-	glinet,gl-ax1800)
-		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 lan4" "wan"
-		;;
-	glinet,gl-axt1800)
-		ucidef_set_interfaces_lan_wan "lan1 lan2" "wan"
-		;;
-	jdcloud,ax1800-pro)
-		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3" "wan"
-		;;
 	cmiot,ax18|\
+	jdcloud,ax1800-pro|\
 	zn,m2|\
 	qihoo,v6|\
 	redmi,ax5|\
@@ -37,6 +30,7 @@ ipq60xx_setup_interfaces()
 	netgear,wax214)
 		ucidef_set_interfaces_lan_wan "lan"
 		;;
+	glinet,gl-ax1800|\
 	jdcloud,ax6600|\
 	yuncore,fap650)
 		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 lan4" "wan"

@@ -58,7 +58,7 @@ ALLWIFIBOARDS:= \
 	qnap_301w \
   redmi_ax5 \
   redmi_ax5-jdcloud \
-	redmi_ax6 \
+  redmi_ax6 \
 	skspruce_wia3300-20 \
 	spectrum_sax1v1k \
 	tplink_eap660hd-v1 \
