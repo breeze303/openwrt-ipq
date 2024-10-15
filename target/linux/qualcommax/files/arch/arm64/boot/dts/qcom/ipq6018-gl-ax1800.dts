@@ -57,12 +57,14 @@
 &dp4 {
 	phy-handle = <&qca8075_3>;
 	status = "okay";
+	label = "lan3";
 };
 
 &dp5 {
 	phy-handle = <&qca8075_4>;
 	phy-mode = "psgmii";
 	status = "okay";
+	label = "lan4";
 };
 
 &wifi {
