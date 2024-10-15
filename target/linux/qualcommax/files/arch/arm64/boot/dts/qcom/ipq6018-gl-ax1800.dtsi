@@ -291,16 +291,19 @@
 &dp1{
 	phy-handle = <&qca8075_0>;
 	status = "okay";
+	label = "wan";
 };
 
 &dp2{
 	phy-handle = <&qca8075_1>;
 	status = "okay";
+	label = "lan1";
 };
 
 &dp3{
 	phy-handle = <&qca8075_2>;
 	status = "okay";
+	label = "lan2";
 };
 
 &qpic_bam {
